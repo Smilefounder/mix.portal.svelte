@@ -27,11 +27,11 @@ jobs:
         git config --global user.email "i.love.to.smile.around@gmail.com"
         git config --global user.name "smilefounder"
         
-        git clone https://github.com/mixcore/mix.portal.svelte.git ${HOME}/work/${GITHUB_REPOSITORY}/mix.portal.svelte/
+        git clone https://github.com/mixcore/mix.portal.svelte.git ${HOME}/work/${GITHUB_REPOSITORY}/
         
         git checkout master
         
-        cp -a ${HOME}/work/${GITHUB_REPOSITORY}/mix.portal.svelte/. ${GITHUB_WORKSPACE}/
+        cp -a ${HOME}/work/${GITHUB_REPOSITORY}/. ${GITHUB_WORKSPACE}/
         
         # Update origin with token
         git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
