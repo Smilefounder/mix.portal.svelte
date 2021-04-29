@@ -9,7 +9,7 @@
     Select,
     SelectItem,
     Button,
-	
+
 	} from "carbon-components-svelte";
 </script>
 <script context="module">
@@ -69,4 +69,3 @@
 		<Button type="submit">Submit button</Button>
 	  </Form>
 </main>
-		
