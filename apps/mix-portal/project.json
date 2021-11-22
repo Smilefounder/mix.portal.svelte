@@ -1,0 +1,30 @@
+{
+  "root": "apps/mix-portal",
+  "projectType": "application",
+  "sourceRoot": "apps/mix-portal/src",
+  "targets": {
+    "build": {
+      "executor": "@nxext/sveltekit:sveltekit",
+      "options": {
+        "command": "build"
+      }
+    },
+    "serve": {
+      "executor": "@nxext/sveltekit:sveltekit",
+      "options": {
+        "command": "dev"
+      }
+    },
+    "add": {
+      "executor": "@nxext/sveltekit:add"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mix-portal/**/*.{ts,svelte,spec.ts}"]
+      }
+    }
+  },
+  "tags": []
+}
